@@ -222,8 +222,6 @@ img{
 }
 
 
-
-
 .freetrial{
 	background-image: url(arrow.png);
 	background-repeat: no-repeat;
@@ -251,11 +249,18 @@ img{
     padding-bottom: 5%;
 }
 
+.sec8{
+	margin: 0;
+	border: 1px solid red;
+}
 .sec8 h1{
 position: relative;
 /*border: 2px solid red;*/
 }
 
+
+
+/*For relative position of "Ex"*/
 .sec8 img{
 	/*border: 2px solid red;*/
 	position: absolute;
@@ -283,34 +288,42 @@ position: relative;
 }
 
 .inwidth{
-	width: 167%;
+	max-width: 150%;
 }
 
+@media (max-width: 768px) { 
+	.inwidth{
+	max-width: 75%;
+}
+}
 .sec8 a{
 	color: #848484;
 }
 
-.sec8{
-	display: flex;
+.sec8 u{
+	margin: 0;
+	padding: 0;
 }
-
+/*
 .sec81{
-	  flex: 1; 
+	  
+	  border: 1px solid black;
 }
 .sec82{
-	  flex: 1; 
+	  
+	  border: 1px solid black;
 }
 .sec83{
-	  flex: 1; 
+	 
+	  border: 1px solid black;
 }
 .sec84{
-	  flex: 1; 
+	
+	  border: 1px solid black;
 }
-.sec85{
-	  flex: 1; 
-}
+*/
 
-.sec85{
+.sec84{
 	background-image: url(footer-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -320,15 +333,16 @@ position: relative;
 @media (max-width: 768px) { 
 	.sec8 img{
 	/*border: 2px solid red;*/
+	display: block;
 	position: absolute;
     top: 3%;
     left: 57%
 	}
-	.sec85{
+	.sec84{
  	background-image: url(footer-bg.png);
  	background-repeat: no-repeat;
  	background-size: cover;
- 	background-position: 0% 250%;
+ 	background-position: 0% 100%;
     
 	}
 }

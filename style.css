@@ -272,11 +272,14 @@ position: relative;
 
 .social ul{
 	float: left;
+	/*border: 2px solid red;*/
+	padding-left: 15%;
+	width: 100%;
 }
 
 .social ul li {
 	display: inline-block;
-	padding: 0 10px;
+	padding-left: 1%;
 }
 
 .inwidth{
